@@ -1,0 +1,23 @@
+{
+	"name": "{{ name }}",
+	"description": "A Rangine vendor.",
+	"keywords": [
+		"rangine"
+	],
+	"license": "Apache-2.0",
+	"require": {
+		"php": ">=7.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"{{ escapedNamespace }}\\": "src/"
+		}
+	},
+	"extra": {
+		"rangine": {
+			"providers": [
+				"{{ escapedNamespace }}\\ServiceProvider"
+			]
+		}
+	}
+}

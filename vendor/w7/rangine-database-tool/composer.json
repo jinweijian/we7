@@ -1,0 +1,29 @@
+{
+	"name": "w7/rangine-database-tool",
+	"description": "rangine database-tool.",
+	"keywords": [
+		"rangine",
+		"database-tool"
+	],
+	"license": "Apache-2.0",
+	"require": {
+		"php": ">=7.1.0",
+		"w7/rangine": "*",
+		"doctrine/dbal": "*"
+	},
+	"require-dev": {
+		"w7/php-cs-fixer": "^1.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"W7\\DatabaseTool\\": "src/"
+		}
+	},
+	"extra": {
+		"rangine": {
+			"providers": [
+				"W7\\DatabaseTool\\ServiceProvider"
+			]
+		}
+	}
+}

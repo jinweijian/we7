@@ -1,0 +1,34 @@
+{
+	"name": "w7/rangine-lang",
+	"description": "rangine lang",
+	"type": "library",
+	"keywords": [
+		"rangine",
+		"lang"
+	],
+	"license": "Apache-2.0",
+	"require": {
+		"php": ">=7.2.0",
+		"caouecs/laravel-lang": "^4.0",
+		"illuminate/filesystem": "*"
+	},
+	"require-dev": {
+		"w7/rangine": "~2.0",
+		"w7/php-cs-fixer": "^1.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"W7\\Lang\\": "src/"
+		},
+		"files": [
+			"src/Helper/Functions.php"
+		]
+	},
+	"extra": {
+		"rangine": {
+			"providers": [
+				"W7\\Lang\\ServiceProvider"
+			]
+		}
+	}
+}

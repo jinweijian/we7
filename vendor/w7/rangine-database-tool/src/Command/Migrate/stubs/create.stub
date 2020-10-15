@@ -1,0 +1,27 @@
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use W7\DatabaseTool\Migrate\Migration;
+
+class DummyClass extends Migration {
+	/**
+	 * Run the migrations.
+	 *
+	 * @return void
+	 */
+	public function up() {
+		$this->schema->create('DummyTable', function (Blueprint $table) {
+			$table->bigIncrements('id');
+			$table->timestamps();
+		});
+	}
+
+	/**
+	 * Reverse the migrations.
+	 *
+	 * @return void
+	 */
+	public function down() {
+		$this->schema->dropIfExists('DummyTable');
+	}
+}

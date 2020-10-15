@@ -1,0 +1,33 @@
+{
+	"name": "w7/rangine-command",
+	"description": "rangine command.",
+	"keywords": [
+		"rangine"
+	],
+	"license": "Apache-2.0",
+	"require": {
+		"php": ">=7.2.0",
+		"w7/rangine": "*",
+		"doctrine/dbal": "*"
+	},
+	"require-dev": {
+		"w7/php-cs-fixer": "^1.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"W7\\Command\\": "src/"
+		}
+	},
+	"extra": {
+		"rangine": {
+			"providers": [
+				"W7\\Command\\ServiceProvider"
+			]
+		}
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}

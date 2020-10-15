@@ -1,0 +1,18 @@
+<?php
+
+namespace W7\App\Handler\Exception;
+
+use W7\App;
+use W7\Http\Message\Server\Response;
+use W7\Core\Exception\Handler\ExceptionHandler as ExceptionHandlerAbstract;
+use W7\Core\Exception\RouteNotFoundException;
+
+class ExceptionHandler extends ExceptionHandlerAbstract {
+	public function handle(\Throwable $e): Response {
+		if ($e instanceof RouteNotFoundException) {
+			return App::getApp()->getContext()->getResponse()->redirect('/');
+		}
+
+		return parent::handle($e);
+	}
+}

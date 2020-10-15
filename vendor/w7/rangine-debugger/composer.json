@@ -1,0 +1,32 @@
+{
+	"name": "w7/rangine-debugger",
+	"description": " Rangine Debugger.",
+	"keywords": [
+		"rangine",
+		"debugger"
+	],
+	"license": "Apache-2.0",
+	"require": {
+		"php": ">=7.1.0",
+		"symfony/var-dumper": "^4.1"
+	},
+	"require-dev": {
+		"w7/php-cs-fixer": "^1.0",
+		"w7/rangine": "~2.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"W7\\Debugger\\": "src/"
+		},
+		"files": [
+			"src/Helper/Functions.php"
+		]
+	},
+	"extra": {
+		"rangine": {
+			"providers": [
+				"W7\\Debugger\\ServiceProvider"
+			]
+		}
+	}
+}

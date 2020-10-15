@@ -1,0 +1,13 @@
+<?php
+
+namespace {{ DummyNamespace }};
+
+use W7\Core\Database\ModelAbstract;
+
+class {{ DummyClass }} extends ModelAbstract {
+	protected $table = '{{ DummyTableName }}';
+	protected $connection = '{{ DummyConnection }}';
+	protected $primaryKey = '{{ DummyTableKey }}';
+	protected $fillable = [{{ DummyFillAble }}];
+	public $timestamps = false;
+}

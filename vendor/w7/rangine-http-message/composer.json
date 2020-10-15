@@ -1,0 +1,41 @@
+{
+	"name": "w7/rangine-http-message",
+	"type": "library",
+	"keywords": [
+		"php",
+		"swoole",
+		"swoft",
+		"http-message"
+	],
+	"description": "rangine http message",
+	"license": "Apache-2.0",
+	"require": {
+		"psr/http-message": "^1.0",
+		"symfony/http-foundation": "*",
+		"ext-json": "*"
+	},
+	"autoload": {
+		"classmap": [
+		],
+		"psr-4": {
+			"W7\\Http\\Message\\": "src/"
+		},
+		"files": [
+			"src/Helper/Functions.php"
+		]
+	},
+	"extra": {
+		"rangine": {
+			"providers": [
+				"W7\\Http\\Message\\ServiceProvider"
+			]
+		}
+	},
+	"scripts": {
+		"test": "./vendor/bin/phpunit -c phpunit.xml"
+	},
+	"require-dev": {
+		"w7/php-cs-fixer": "^1.0",
+		"swoole/ide-helper": "^4.4"
+	}
+}
