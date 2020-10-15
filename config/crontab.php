@@ -10,11 +10,6 @@
  */
 
 return [
-	'setting' => [
-		'worker_num' => ienv('SERVER_CRONTAB_WORKER_NUM', 1),
-		'host'  => '0.0.0.0',
-		'port' => ienv('SERVER_CRONTAB_PORT', 88)
-	],
 	'task' => [
 
 	]

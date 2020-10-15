@@ -33,9 +33,14 @@
 			"W7\\Tests\\" : "tests/"
 		}
 	},
+	"repositories": [
+		{
+			"type": "git",
+			"url": "https://github.com/we7coreteam/w7-rangine-package-plugin.git"
+		}
+	],
 	"require": {
 		"w7/rangine": "*",
-		"w7/rangine-mq": "*",
 		"w7/rangine-crontab": "*"
 	},
 	"require-dev": {
