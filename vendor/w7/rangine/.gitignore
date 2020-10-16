@@ -17,5 +17,4 @@ changelog.md
 phar.build.inc
 docker-compose.yml
 phpunit.xml
-config/
 public/
